@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  apicore:
+    image: ${DOCKER_REGISTRY-}apicore
+    build:
+      context: .
+      dockerfile: apiCore\Dockerfile
